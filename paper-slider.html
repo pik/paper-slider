@@ -698,7 +698,7 @@ Custom property | Description | Default
       },
 
       _changeValue: function(event) {
-        this.value = event.target.value;
+        this.value = parseFloat(event.target.value);
         this.fire('change');
       },
 
